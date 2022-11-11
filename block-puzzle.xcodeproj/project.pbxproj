@@ -14,8 +14,6 @@
 		5ED28AF828CF4C0000B52CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED28AF728CF4C0000B52CB8 /* AppDelegate.swift */; };
 		5ED28AFA28CF4C0000B52CB8 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED28AF928CF4C0000B52CB8 /* GameViewController.swift */; };
 		5ED28AFD28CF4C0000B52CB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED28AFB28CF4C0000B52CB8 /* Main.storyboard */; };
-		5ED28AFF28CF4C0000B52CB8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ED28ADC28CF4BFF00B52CB8 /* Actions.sks */; };
-		5ED28B0028CF4C0000B52CB8 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ED28ADC28CF4BFF00B52CB8 /* Actions.sks */; };
 		5ED28B0128CF4C0000B52CB8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ED28ADD28CF4BFF00B52CB8 /* GameScene.sks */; };
 		5ED28B0228CF4C0000B52CB8 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5ED28ADD28CF4BFF00B52CB8 /* GameScene.sks */; };
 		5ED28B0328CF4C0000B52CB8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED28ADE28CF4BFF00B52CB8 /* GameScene.swift */; };
@@ -25,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5ED28ADC28CF4BFF00B52CB8 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		5E29B885291E907A005F8348 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5ED28ADD28CF4BFF00B52CB8 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5ED28ADE28CF4BFF00B52CB8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5ED28ADF28CF4C0000B52CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +60,7 @@
 		5ED28AD628CF4BFF00B52CB8 = {
 			isa = PBXGroup;
 			children = (
+				5E29B885291E907A005F8348 /* README.md */,
 				5ED28ADB28CF4BFF00B52CB8 /* block-puzzle Shared */,
 				5ED28AE628CF4C0000B52CB8 /* block-puzzle iOS */,
 				5ED28AF628CF4C0000B52CB8 /* block-puzzle macOS */,
@@ -72,7 +71,6 @@
 		5ED28ADB28CF4BFF00B52CB8 /* block-puzzle Shared */ = {
 			isa = PBXGroup;
 			children = (
-				5ED28ADC28CF4BFF00B52CB8 /* Actions.sks */,
 				5ED28ADD28CF4BFF00B52CB8 /* GameScene.sks */,
 				5ED28ADE28CF4BFF00B52CB8 /* GameScene.swift */,
 				5ED28ADF28CF4C0000B52CB8 /* Assets.xcassets */,
@@ -156,7 +154,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					5ED28AE328CF4C0000B52CB8 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -192,7 +190,6 @@
 			files = (
 				5ED28B0128CF4C0000B52CB8 /* GameScene.sks in Resources */,
 				5ED28AED28CF4C0000B52CB8 /* Main.storyboard in Resources */,
-				5ED28AFF28CF4C0000B52CB8 /* Actions.sks in Resources */,
 				5ED28AF028CF4C0000B52CB8 /* LaunchScreen.storyboard in Resources */,
 				5ED28B0528CF4C0000B52CB8 /* Assets.xcassets in Resources */,
 			);
@@ -205,7 +202,6 @@
 				5ED28AFD28CF4C0000B52CB8 /* Main.storyboard in Resources */,
 				5ED28B0228CF4C0000B52CB8 /* GameScene.sks in Resources */,
 				5ED28B0628CF4C0000B52CB8 /* Assets.xcassets in Resources */,
-				5ED28B0028CF4C0000B52CB8 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +291,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -353,6 +350,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -436,9 +434,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "block-puzzle macOS/block_puzzle_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
@@ -463,9 +463,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "block-puzzle macOS/block_puzzle_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
