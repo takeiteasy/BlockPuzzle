@@ -791,9 +791,9 @@ extension GameScene {
         for t in touches {
             switch self.gameState {
             case .Playing:
-                self.playingClickDown(location: event.location(in: self))
+                self.playingClickDown(location: t.location(in: self))
             case .GameOver:
-                self.gameOverClickDown(location: event.location(in: self))
+                self.gameOverClickDown(location: t.location(in: self))
             }
         }
     }
@@ -802,9 +802,9 @@ extension GameScene {
         for t in touches {
             switch self.gameState {
             case .Playing:
-                self.playingClickDrag(location: event.location(in: self))
+                self.playingClickDrag(location: t.location(in: self))
             case .GameOver:
-                self.gameOverClickDrag(location: event.location(in: self))
+                self.gameOverClickDrag(location: t.location(in: self))
             }
         }
     }
@@ -813,15 +813,15 @@ extension GameScene {
         for t in touches {
             switch self.gameState {
             case .Playing:
-                self.playingClickUp(location: event.location(in: self))
+                self.playingClickUp(location: t.location(in: self))
             case .GameOver:
-                self.gameOverClickUp(location: event.location(in: self))
+                self.gameOverClickUp(location: t.location(in: self))
             }
         }
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for t in touches {
+        for _ in touches {
             // ???
         }
     }
