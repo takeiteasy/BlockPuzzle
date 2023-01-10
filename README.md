@@ -1,6 +1,6 @@
 # BlockPuzzle
 
-An Tetris-like iOS game using SpriteKit. Instead of falling tetrominos, they're placed on a 2D grid. Currently only works on Mac, iOS version is a todo.
+A Tetris-like iOS game using SpriteKit. Instead of falling tetrominos, they're placed on a 2D grid. Currently only works on Mac, iOS version is a todo.
 
 <p align="center">
     <img src="https://github.com/takeiteasy/BlockPuzzle/blob/master/screenshot.png?raw=true">
